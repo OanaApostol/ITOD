@@ -4,7 +4,7 @@
 import unittest
 
 
-class SlicingTest(unittest.TestCase):
+class SlicingTests(unittest.TestCase):
 
     text = 'Python'
 
