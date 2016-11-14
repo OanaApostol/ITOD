@@ -10,11 +10,11 @@ class Lower(unittest.TestCase):
         self.Lower = Lower("aaaa")
 
     def test_lowercase_null(self):
-        with self.assertRaises(IndexError):
+        with self.assertRaises(TypeError):
             Lower(None)
 
     def test_lowercase_null(self):
-        with self.assertRaises(IndexError):
+        with self.assertRaises(TypeError):
             Lower("")
 
     def test_lowercase_null(self):
