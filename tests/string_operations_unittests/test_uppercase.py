@@ -9,11 +9,11 @@ class Upper(unittest.TestCase):
     def test_upper_existence(self):
         self.Upper = Upper("aaaa")
 
-    def test_uppercase_null(self):
+    def test_uppercase_null_values(self):
         with self.assertRaises(TypeError):
             Upper(None)
 
-    def test_uppercase_null(self):
+    def test_uppercase_empty_values(self):
         with self.assertRaises(TypeError):
             Upper("")
 
