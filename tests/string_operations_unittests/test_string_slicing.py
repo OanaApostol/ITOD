@@ -52,11 +52,11 @@ class SlicingTests(unittest.TestCase):
         self.assertEqual(expected_slice, actual_slice)
 
     def test_with_null_text(self):
-        with self.assertRaises(IndexError):
+        with self.assertRaises(TypeError):
             Slicing(None)
 
     def test_empty_string(self):
-        with self.assertRaises(IndexError):
+        with self.assertRaises(TypeError):
             Slicing("")
 
     def test_negative_index(self):
