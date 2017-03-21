@@ -4,7 +4,7 @@
 import unittest
 
 
-class Lower(unittest.TestCase):
+class Lower1(unittest.TestCase):
 
     def test_lower_existence(self):
         self.Lower = Lower("aaaa")
